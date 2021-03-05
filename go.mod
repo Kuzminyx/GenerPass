@@ -1,4 +1,4 @@
-module github.com/Go project on heroku
+module github.com/Go_project_on_heroku
 
 go 1.15
 

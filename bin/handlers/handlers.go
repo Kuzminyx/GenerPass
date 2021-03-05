@@ -7,8 +7,8 @@ import (
 	"text/template"
 	"time"
 
-	gsql "github.com/GeneratePassAPI/bin/bd"
-	"github.com/GeneratePassAPI/bin/utility"
+	gsql "github.com/Go_project_on_heroku/bin/bd"
+	"github.com/Go_project_on_heroku/bin/utility"
 )
 
 //User - объект для работы с пользователями с помощью JSON ...

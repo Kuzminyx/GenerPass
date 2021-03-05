@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 
-	gsql "github.com/GeneratePassAPI/bin/bd"
+	gsql "github.com/Go_project_on_heroku/bin/bd"
 )
 
 //Response - структура ответа для клиента ...

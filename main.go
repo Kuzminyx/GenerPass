@@ -9,8 +9,8 @@ import (
 	"os/signal"
 	"time"
 
-	ghandlers "github.com/GeneratePassAPI/bin/handlers"
-	utility "github.com/GeneratePassAPI/bin/utility"
+	ghandlers "github.com/Go_project_on_heroku/bin/handlers"
+	utility "github.com/Go_project_on_heroku/bin/utility"
 )
 
 type apihandler func(w http.ResponseWriter, r *http.Request, js ghandlers.JSONclient)

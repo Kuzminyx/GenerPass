@@ -22,6 +22,8 @@ func main() {
 		port = "9000"
 	}
 
+	log.Println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" + port + "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+
 	router := http.NewServeMux()
 
 	//Site routes

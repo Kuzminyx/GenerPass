@@ -36,7 +36,7 @@ func main() {
 	router.Handle("/gener", apihandler(ghandlers.Gener))
 
 	server := &http.Server{
-		Addr:    ":9000",
+		Addr:    "",
 		Handler: router,
 	}
 

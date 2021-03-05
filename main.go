@@ -18,6 +18,9 @@ type apihandler func(w http.ResponseWriter, r *http.Request, js ghandlers.JSONcl
 func main() {
 
 	port := os.Getenv("PORT")
+	if port == "" {
+		port = "9000"
+	}
 
 	router := http.NewServeMux()
 

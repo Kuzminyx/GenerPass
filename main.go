@@ -47,6 +47,8 @@ func main() {
 		Handler: router,
 	}
 
+	log.Println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" + "is starting" + "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+
 	go server.ListenAndServe()
 
 	// Wait for an interrupt

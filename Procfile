@@ -1,1 +1,1 @@
-web: Go_project_on_heroku.exe
+web: Go_project_on_heroku

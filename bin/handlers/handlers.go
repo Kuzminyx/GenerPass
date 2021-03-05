@@ -238,15 +238,15 @@ func Gener(w http.ResponseWriter, r *http.Request, clientdata JSONclient) {
 
 //OpenIndex = обработаем роут на главную страницу ...
 func OpenIndex(w http.ResponseWriter, r *http.Request) {
-	// tmpl, alert := template.ParseFiles("template/index.html")
-	// if alert != nil {
-	// 	fmt.Printf(alert.Error())
-	// }
-	// tmpl.Execute(w, nil)
-
-	tmpl, alert := template.ParseGlob("template/*")
+	tmpl, alert := template.ParseFiles("template/index.html")
 	if alert != nil {
 		fmt.Printf(alert.Error())
 	}
+	tmpl.Execute(w, nil)
+
+	// tmpl, alert := template.ParseGlob("template/*")
+	// if alert != nil {
+	// 	fmt.Printf(alert.Error())
+	// }
 
 }

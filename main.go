@@ -17,6 +17,8 @@ type apihandler func(w http.ResponseWriter, r *http.Request, js ghandlers.JSONcl
 
 func main() {
 
+	port := os.Getenv("PORT")
+
 	router := http.NewServeMux()
 
 	//Site routes
@@ -36,7 +38,7 @@ func main() {
 	router.Handle("/gener", apihandler(ghandlers.Gener))
 
 	server := &http.Server{
-		//Addr:    "8080",
+		Addr:    port,
 		Handler: router,
 	}
 

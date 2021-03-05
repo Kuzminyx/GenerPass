@@ -1,4 +1,4 @@
-module github.com/GeneratePassAPI
+module github.com/Go project on heroku
 
 go 1.15
 

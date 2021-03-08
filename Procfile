@@ -1,1 +1,1 @@
-web: main $PORT
+web: Go_project_on_heroku $PORT
